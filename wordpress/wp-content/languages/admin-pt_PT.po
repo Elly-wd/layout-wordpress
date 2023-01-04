@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.1.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-11-22 14:04:59+0000\n"
+"PO-Revision-Date: 2023-01-02 12:26:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,9 +69,20 @@ msgstr "Texto mais responsivo com tipografia fluida"
 msgid "Combine it with block locking options for even more advanced control over your blocks."
 msgstr "Combine-o com opções de bloqueio de blocos para um controlo ainda mais avançado sobre os seus blocos."
 
+#. translators: %s: Link to content locking dev note.
+#: wp-admin/about.php:504
+msgid "Thanks to <a href=\"%s\">content-only editing settings</a>, layouts can be locked within container blocks. In a content-only block, its children are invisible to the List View and entirely uneditable. So you control the layout while your writers can focus on the content."
+msgstr "Graças às <a href=\"%s\">configurações de edição apenas de conteúdo</a>, os layouts podem ser bloqueados em blocos contentor. Num bloco apenas de conteúdo, os seus dependentes são invisíveis na vista de lista e não editáveis. Assim, pode controlar o layout enquanto quem escreve se foca no conteúdo."
+
 #: wp-admin/about.php:499
 msgid "Content-only editing support for container blocks"
 msgstr "Suporte de edição apenas de conteúdo para blocos contentores."
+
+#. translators: %s: Link to install Performance Lab plugin if permitted,
+#. otherwise link to plugin on WordPress.org.
+#: wp-admin/about.php:486
+msgid "Be among the first to get the latest improvements by adding the <a href=\"%s\">Performance Lab plugin</a> to your WordPress test site or sandbox."
+msgstr "Seja um dos primeiros a aceder às mais recentes melhorias ao adicionar o plugin <a href=\"%s\">Performance Lab</a> ao seu site de testes WordPress."
 
 #: wp-admin/about.php:466
 msgid "Performance highlights"
@@ -95,6 +106,11 @@ msgstr "A descrição do site não está preenchida por omissão em novos sites 
 msgid "Other notes of interest"
 msgstr "Outras notas de interesse"
 
+#. translators: %s: Link to accessibility improvements dev note.
+#: wp-admin/about.php:309
+msgid "More than 40 improvements in accessibility include resolving focus loss problems in the editor, improving form labels and audible messages, making alternative text easier to edit, and fixing the sub-menu overlap in the expanded admin side navigation at smaller screen sizes and higher zoom levels. Learn more about <a href=\"%s\">accessibility in WordPress</a>."
+msgstr "Mais de 40 melhorias na acessibilidade, que incluem a resolução de problemas de perda de foco no editor, melhoria de legendas de campos e mensagens audíveis, maior facilidade de edição dos textos alternativos, e correcção da sobreposição do submenu na navegação administrativa expandida em ecrãs de menor dimensão e com nível de zoom mais elevado. Saiba mais sobre a <a href=\"%s\">acessibilidade em WordPress</a>."
+
 #: wp-admin/about.php:283
 msgid "A streamlined style system"
 msgstr "Um sistema de estilos simplificado"
@@ -103,9 +119,20 @@ msgstr "Um sistema de estilos simplificado"
 msgid "https://wordpress.org/themes/tags/full-site-editing/"
 msgstr "https://pt.wordpress.org/themes/tags/full-site-editing/"
 
+#. translators: %s: Link to Block Themes on WordPress.org.
+#: wp-admin/about.php:249
+msgid "The Themes Directory has <a href=\"%s\">a filter for block themes</a>, and a pattern preview gives a better sense of what the theme might look like while exploring different themes and patterns."
+msgstr "O directório de temas tem <a href=\"%s\">um filtro para temas de blocos</a>, e uma pré-visualização de padrões que dá uma melhor ideia do aspecto dos temas ao explorar diferentes temas e padrões."
+
 #: wp-admin/about.php:244
 msgid "Find block themes faster"
 msgstr "Encontre temas de blocos mais rapidamente"
+
+#. translators: 1: Variation announcement post URL, 2: Accessibility-ready
+#. handbook page.
+#: wp-admin/about.php:105
+msgid "Building on the foundational elements in the 5.9 and 6.0 releases for block themes and style variations, the new default theme, Twenty Twenty-Three, includes <a href=\"%1$s\">10 different styles</a> and is &#147;<a href=\"%2$s\">Accessibility Ready</a>&#148;."
+msgstr "Construído sob os elementos fundamentais das versões 5.9 e 6.0 para temas de blocos e variações de estilos, o novo tema por omissão, Twenty Twenty-Three, inclui <a href=\"%1$s\">10 estilos diferentes</a> e está &#147;<a href=\"%2$s\">preparado para acessibilidade</a>&#148;."
 
 #: wp-admin/about.php:100
 msgid "A new default theme powered by 10 distinct style variations"
@@ -122,6 +149,10 @@ msgstr "https://developer.wordpress.org/apis/wp-config-php/#wp-environment-type"
 #: wp-admin/upload.php:247
 msgid "<strong>Copy URL to clipboard</strong> copies the URL for the media file to your clipboard."
 msgstr "<strong>Copiar URL para a área de transferência</strong> copia o URL do ficheiro multimédia para a sua área de transferência."
+
+#: wp-admin/upload.php:246
+msgid "<strong>View</strong> will take you to a public display page for that file."
+msgstr "<strong>Ver</strong> irá abrir a página de apresentação pública desse ficheiro."
 
 #: wp-admin/upload.php:245
 msgid "<strong>Delete Permanently</strong> will delete the file from the media library (as well as from any posts to which it is currently attached)."
@@ -330,7 +361,7 @@ msgstr "Activo"
 
 #: wp-admin/includes/class-core-upgrader.php:160
 #: wp-admin/includes/class-wp-upgrader.php:166
-#: wp-admin/includes/update-core.php:1020
+#: wp-admin/includes/update-core.php:1018
 msgid "The update cannot be installed because some files could not be copied. This is usually due to inconsistent file permissions."
 msgstr "A actualização não pôde ser instalada por não ter sido possível copiar alguns ficheiros. Por norma isto ocorre devido a permissões inconsistentes de ficheiros."
 
@@ -2434,7 +2465,7 @@ msgid "The seventh parameter passed to %s should be numeric representing menu po
 msgstr "O sétimo parâmetro passado à função %s deve ser um número inteiro que represente a posição no menu."
 
 #. translators: 1: WordPress version number, 2: The PHP extension name needed.
-#: wp-admin/includes/update-core.php:1115
+#: wp-admin/includes/update-core.php:1113
 msgid "The update cannot be installed because WordPress %1$s requires the %2$s PHP extension."
 msgstr "Esta actualização não pode ser instalada porque o WordPress %1$s requer a extensão %2$s do PHP."
 
@@ -8550,8 +8581,8 @@ msgstr "Ocorreu uma falha crítica no seu site %1$s, ao tentar actualizar o Word
 msgid "WordPress %s is also now available."
 msgstr "O WordPress %s também está disponível agora."
 
-#: wp-admin/includes/update-core.php:1192
-#: wp-admin/includes/update-core.php:1228
+#: wp-admin/includes/update-core.php:1190
+#: wp-admin/includes/update-core.php:1226
 msgid "The update cannot be installed because your site is unable to copy some files. This is usually due to inconsistent file permissions."
 msgstr "A actualização não pode ser instalada por não ter sido possível copiar alguns ficheiros. Isto deve-se normalmente a permissões inconsistentes de ficheiros."
 
@@ -8666,7 +8697,7 @@ msgstr "Actualizar traduções"
 msgid "Background updates"
 msgstr "Actualizações automáticas"
 
-#: wp-admin/includes/update-core.php:1288
+#: wp-admin/includes/update-core.php:1286
 msgid "There is not enough free disk space to complete the update."
 msgstr "Não existe espaço suficiente no disco para terminar a actualização."
 
@@ -8744,11 +8775,11 @@ msgstr "O nome de utilizador que inseriu tem caracteres inválidos."
 msgid "Please provide a valid username."
 msgstr "Por favor insira um nome de utilizador válido."
 
-#: wp-admin/includes/update-core.php:1209
+#: wp-admin/includes/update-core.php:1207
 msgid "Copying the required files&#8230;"
 msgstr "A copiar os ficheiros necessários&#8230;"
 
-#: wp-admin/includes/update-core.php:1123
+#: wp-admin/includes/update-core.php:1121
 msgid "Preparing to install the latest version&#8230;"
 msgstr "A preparar para instalar a versão mais recente&#8230;"
 
@@ -9441,7 +9472,7 @@ msgid "Search engine visibility"
 msgstr "Visibilidade nos motores de pesquisa"
 
 #. translators: 1: WordPress version, 2: URL to About screen.
-#: wp-admin/includes/update-core.php:1522 wp-admin/update-core.php:904
+#: wp-admin/includes/update-core.php:1520 wp-admin/update-core.php:904
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "Boas-vindas ao WordPress %1$s. A redireccionar para a página sobre o WordPress. Se não quer ver essa página, clique <a href=\"%2$s\">aqui</a>."
 
@@ -10218,7 +10249,7 @@ msgid "This screen allows you to choose your permalink structure. You can choose
 msgstr "Esta página permite-lhe escolher a sua estrutura de ligações permanente. Pode escolher de entre as configurações mais comuns ou criar estruturas de URL personalizadas."
 
 #. translators: 1: WordPress version, 2: URL to About screen.
-#: wp-admin/includes/update-core.php:1530 wp-admin/update-core.php:912
+#: wp-admin/includes/update-core.php:1528 wp-admin/update-core.php:912
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Boas-vindas ao WordPress %1$s. <a href=\"%2$s\">Mais informações</a>."
 
@@ -12226,7 +12257,7 @@ msgid "User already exists. Password inherited."
 msgstr "Utilizador já existe. Senha herdada."
 
 #: wp-admin/includes/class-wp-automatic-updater.php:428
-#: wp-admin/includes/update-core.php:1516 wp-admin/update-core.php:900
+#: wp-admin/includes/update-core.php:1514 wp-admin/update-core.php:900
 msgid "WordPress updated successfully."
 msgstr "WordPress actualizado com sucesso."
 
@@ -13464,34 +13495,34 @@ msgstr "Actualizar para %s"
 msgid "You are using a development version (%1$s). Cool! Please <a href=\"%2$s\">stay updated</a>."
 msgstr "Está a usar uma versão de desenvolvimento (%1$s). Muito bem! Por favor <a href=\"%2$s\">mantenha-se actualizado</a>."
 
-#: wp-admin/includes/update-core.php:1446
+#: wp-admin/includes/update-core.php:1444
 msgid "Upgrading database&#8230;"
 msgstr "A actualizar a base de dados&#8230;"
 
-#: wp-admin/includes/update-core.php:1004
+#: wp-admin/includes/update-core.php:1002
 msgid "The update could not be unpacked"
 msgstr "Não foi possível descompactar a actualização"
 
-#: wp-admin/includes/update-core.php:986
+#: wp-admin/includes/update-core.php:984
 msgid "Verifying the unpacked files&#8230;"
 msgstr "A verificar os ficheiros descompactados&#8230;"
 
 #. translators: 1: WordPress version number, 2: Minimum required MySQL version
 #. number, 3: Current MySQL version number.
-#: wp-admin/includes/update-core.php:1101
+#: wp-admin/includes/update-core.php:1099
 msgid "The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "A actualização não pode ser instalada porque o WordPress %1$s requer a versão de MySQL %2$s ou superior. Está a correr o MySQL na versão %3$s."
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Current PHP version number.
-#: wp-admin/includes/update-core.php:1090
+#: wp-admin/includes/update-core.php:1088
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "A actualização não pode ser instalada porque o WordPress %1$s requer a versão de PHP %2$s ou superior. Está a correr o PHP na versão %3$s."
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Minimum required MySQL version number, 4: Current PHP version
 #. number, 5: Current MySQL version number.
-#: wp-admin/includes/update-core.php:1077
+#: wp-admin/includes/update-core.php:1075
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "A actualização não pode ser instalada porque o WordPress %1$s requer a versão de PHP %2$s ou superior e a versão de MySQL %3$s ou superior. Está a correr o PHP na versão %4$s e o MySQL na versão %5$s."
 
@@ -14432,7 +14463,7 @@ msgid "Empty archive."
 msgstr "Ficheiro de arquivo vazio."
 
 #: wp-admin/includes/file.php:1742 wp-admin/includes/file.php:1872
-#: wp-admin/includes/file.php:1917 wp-admin/includes/update-core.php:1387
+#: wp-admin/includes/file.php:1917 wp-admin/includes/update-core.php:1385
 msgid "Could not copy file."
 msgstr "Não foi possível copiar ficheiro."
 
@@ -14750,12 +14781,12 @@ msgid "The plugin is at the latest version."
 msgstr "O plugin está na sua versão mais recente."
 
 #: wp-admin/includes/class-wp-upgrader.php:169
-#: wp-admin/includes/update-core.php:1336
+#: wp-admin/includes/update-core.php:1334
 msgid "Disabling Maintenance mode&#8230;"
 msgstr "A desactivar o modo de manutenção&#8230;"
 
 #: wp-admin/includes/class-wp-upgrader.php:168
-#: wp-admin/includes/update-core.php:1200
+#: wp-admin/includes/update-core.php:1198
 msgid "Enabling Maintenance mode&#8230;"
 msgstr "A activar o modo de manutenção&#8230;"
 

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*
+Theme Name: Layout Ziriga
+Author: <Seu nome>
+Description: Tema customizado para a Alura Intercâmbios
+Version: 1.0.0
+Tags: cursos, idiomas, intercâmbios, viagens
+ */
+/*.titulo-verde-claro{
+    color: #97CF4E;
+    font-size: 14pt;
+}
+.titulo-verde-escuro{
+    color: #25472D;
+    font-weight: bold;
+    margin-left: 7%;
+}*/
+.header {
+  background-color: #97CF4E;
+  content: "";
+  margin-top: -3.5%;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+main {
+  display: block;
+  width: 100% !important;
+  text-align: center;
+}
+
+.inicio {
+  background-image: url(./img/Bg-Topo.png);
+  display: flex;
+  max-width: 100%;
+  text-align: center;
+  align-self: center;
+  height: 31rem;
+  margin-top: -4%;
+}
+
+.sobre {
+  margin-top: 4%;
+  display: inline-flex;
+}
+
+.col1 {
+  max-width: 30%;
+  margin-top: 11%;
+  margin-left: 16%;
+  text-align: left;
+}
+
+.col2 {
+  margin-top: 8%;
+}
+
+.texto-principal {
+  font-size: 20pt;
+  text-align: left;
+  font-weight: 300;
+}
+
+.titulo-verde-claro {
+  color: #97CF4E;
+  font-size: 14pt;
+  font-weight: 600;
+  margin-top: 7%;
+}
+
+.titulo-verde-escuro {
+  text-align: left;
+  margin-left: 13%;
+  color: #25472D;
+  font-size: 15pt;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.texto-sobre {
+  color: #97CF4E;
+  width: 39%;
+  text-align: left;
+  font-size: 12pt;
+  margin-left: 13%;
+  font-weight: bold;
+}
+
+.texto-objetivo {
+  width: 44%;
+  text-align: left;
+  margin-left: 13%;
+  margin-top: 8%;
+}
+
+.img-novidades {
+  width: 30rem;
+  margin-top: -6%;
+  height: 25rem;
+}
+
+.tablet-img {
+  width: 29rem;
+  margin-top: -28%;
+}
+
+.logo-BR {
+  text-align: left;
+  margin-left: -3%;
+  width: 18rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    background-color: #97CF4E;
+    content: "";
+    margin-top: -17%;
+  }
+  footer {
+    background-color: #25472D;
+    height: 3rem;
+  }
+  .col1 {
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+  .inicio {
+    background-image: url("./img/Bg-Topo-1.png");
+    height: 40rem;
+    margin-top: -4%;
+    text-align: center;
+    font-weight: lighter;
+    align-items: center;
+    display: block;
+  }
+  .sobre {
+    display: block;
+    margin-top: 12rem;
+  }
+  /*.logo-BR{
+      background-image: url('./img/BR-logo-mobile.png');
+      background-repeat: no-repeat;
+      content: '';
+      height: 6rem;
+      margin-left: 20%;
+  }*/
+  .img-novidades {
+    max-width: 90%;
+    margin-top: 5%;
+  }
+  .tablet-img {
+    max-width: 90%;
+  }
+  .parceiros-img {
+    max-width: 80%;
+    margin-top: 11%;
+    margin-left: 8%;
+  }
+  .rapaz-note-img {
+    max-width: 52%;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 24%;
+  }
+  .mini-divisoria {
+    background-color: #97CF4E;
+    content: "";
+    height: 0.4%;
+    width: 4rem;
+    margin-left: 10rem;
+    margin-top: -2%;
+  }
+  .texto-principal {
+    font-size: 17pt;
+    width: 72%;
+    margin-left: 16%;
+  }
+  .texto-sobre {
+    color: #97CF4E;
+    width: 80%;
+    font-weight: 500;
+    margin-left: 7%;
+    font-size: 12.5pt;
+    margin-top: 8%;
+  }
+  .texto-objetivo {
+    width: 80%;
+    margin-left: 7%;
+    font-size: 11pt;
+    margin-top: 8%;
+  }
+  .titulo-verde-claro {
+    color: #97CF4E;
+    font-size: 16pt;
+    font-weight: 600;
+  }
+  .titulo-verde-escuro {
+    color: #25472D;
+    font-weight: 700;
+    margin-left: 7%;
+    font-size: 13pt;
+  }
+  .parceiros-img {
+    margin-top: 15%;
+    margin-left: 8%;
+  }
+}/*# sourceMappingURL=style.css.map */
