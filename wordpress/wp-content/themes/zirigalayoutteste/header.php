@@ -10,3 +10,4 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri() . '/style.css'?>">
 </head>
 <body>
+<div class="header">.</div>
